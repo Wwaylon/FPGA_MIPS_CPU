@@ -1,0 +1,642 @@
+
+*** Running vivado
+    with args -log mips_fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_fpga.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source mips_fpga.tcl -notrace
+Command: synth_design -top mips_fpga -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 699.391 ; gain = 176.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mips_fpga' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/mips_fpga.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (2#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mips_top' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'f_d_stage_reg' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/f_d_stage_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'f_d_stage_reg' (3#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/f_d_stage_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'd_e_stage_reg' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:2]
+WARNING: [Synth 8-3848] Net shamtE in module/entity d_e_stage_reg does not have driver. [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'd_e_stage_reg' (4#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:2]
+INFO: [Synth 8-6157] synthesizing module 'e_m_stage_reg' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/e_m_stage_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'e_m_stage_reg' (5#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/e_m_stage_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'm_wb_stage_reg' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/m_wb_stage_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'm_wb_stage_reg' (6#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/m_wb_stage_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (7#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (8#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (9#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (9#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (10#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (11#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multiply' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/multiply.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'multiply' (12#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/multiply.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/hilo_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (13#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/hilo_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:13]
+WARNING: [Synth 8-567] referenced signal 'shamt' should be on the sensitivity list [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (14#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/mux3.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (15#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/mux3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (16#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (17#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (18#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (19#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (20#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile.dat' is read successfully [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (21#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (22#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips_top' (23#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (24#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (25#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips_fpga' (26#1) [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/basys3_single_cycle_mips_validation/mips_fpga.v:1]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtE[4]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtE[3]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtE[2]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtE[1]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtE[0]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtD[4]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtD[3]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtD[2]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtD[1]
+WARNING: [Synth 8-3331] design d_e_stage_reg has unconnected port shamtD[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 762.781 ; gain = 239.938
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 762.781 ; gain = 239.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 762.781 ; gain = 239.938
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc]
+Finished Parsing XDC File [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mips_fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mips_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 889.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 889.492 ; gain = 366.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 889.492 ; gain = 366.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 889.492 ; gain = 366.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/multiply.v:14]
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 889.492 ; gain = 366.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 27    
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	  65 Input     32 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mips_fpga 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module f_d_stage_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module d_e_stage_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
+Module e_m_stage_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
+Module m_wb_stage_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
+Module dreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module multiply 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+Module hilo_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module auxdec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      8 Bit        Muxes := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  65 Input     32 Bit        Muxes := 1     
+Module led_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP dp/mult/lo0, operation Mode is: A*B.
+DSP Report: operator dp/mult/lo0 is absorbed into DSP dp/mult/lo0.
+DSP Report: operator dp/mult/lo0 is absorbed into DSP dp/mult/lo0.
+DSP Report: Generating DSP dp/mult/lo0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator dp/mult/lo0 is absorbed into DSP dp/mult/lo0.
+DSP Report: operator dp/mult/lo0 is absorbed into DSP dp/mult/lo0.
+DSP Report: Generating DSP dp/mult/lo0, operation Mode is: A*B.
+DSP Report: operator dp/mult/lo0 is absorbed into DSP dp/mult/lo0.
+DSP Report: operator dp/mult/lo0 is absorbed into DSP dp/mult/lo0.
+DSP Report: Generating DSP dp/mult/lo0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator dp/mult/lo0 is absorbed into DSP dp/mult/lo0.
+DSP Report: operator dp/mult/lo0 is absorbed into DSP dp/mult/lo0.
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[28]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/pc_plus4E_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[12]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[29]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/pc_plus4E_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[13]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[30]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/pc_plus4E_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[14]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[31]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/pc_plus4E_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[15]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[20]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_20_16E_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[21]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_20_16E_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[22]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_20_16E_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[8]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[9]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[10]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[11]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[16]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[0]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[17]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[1]' (FDC) to 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[18]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_20_16E_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[19]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_20_16E_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[3]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[7]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[2]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[6]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[5]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[4]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[25]' (FDC) to 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[0]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[1]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[2]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[3]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/instr_15_11E_reg[4]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jal_waE_reg' (FDC) to 'mips_top/mips/dp/decode_execute_reg/jal_wdE_reg'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/pc_plus4E_reg[0]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/btaE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[28]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/pc_plus4M_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[29]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/pc_plus4M_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[30]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/pc_plus4M_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[31]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/pc_plus4M_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[0]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[7]' (FDC) to 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[8]' (FDC) to 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[9]' (FDC) to 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[10]' (FDC) to 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[20]' (FDC) to 'mips_top/mips/dp/fetch_decode_reg/instrD_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[26]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[18]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[22]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[30]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[24]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[16]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[20]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[28]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[25]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[17]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[21]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[29]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[13]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[23]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[31]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[15]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[19]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[7]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[8]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[10]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/sext_immE_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[28]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/pc_plus4WB_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[29]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/pc_plus4WB_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[30]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/pc_plus4WB_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[31]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/pc_plus4WB_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[0]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_top/mips/dp/fetch_decode_reg/instrD_reg[30] )
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[23]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/jtaE_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/decode_execute_reg/instr_20_16E_reg[0]' (FDC) to 'mips_top/mips/dp/decode_execute_reg/instr_20_16E_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[12]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[15]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[22]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[23]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[9]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[10]' (FDC) to 'mips_top/mips/dp/execute_memory_reg/jtaM_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[12]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[15]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[22]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[23]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[9]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[10]' (FDC) to 'mips_top/mips/dp/memory_writeback_reg/jtaWB_reg[11]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 889.492 ; gain = 366.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------------+-----------+----------------------+-----------------+
+|mips_fpga   | mips_top/mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | 
+|mips_fpga   | mips_top/dmem/ram_reg      | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+----------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiply    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 910.895 ; gain = 388.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 931.363 ; gain = 408.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+----------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------------+-----------+----------------------+-----------------+
+|mips_fpga   | mips_top/mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | 
+|mips_fpga   | mips_top/dmem/ram_reg      | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+----------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:67]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:66]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:66]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:67]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:66]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:67]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:66]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.srcs/sources_1/imports/new/d_e_stage_reg.v:67]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 935.496 ; gain = 412.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 949.312 ; gain = 426.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 949.312 ; gain = 426.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 949.312 ; gain = 426.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 949.312 ; gain = 426.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 949.312 ; gain = 426.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 949.312 ; gain = 426.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |    56|
+|3     |DSP48E1  |     4|
+|4     |LUT1     |     3|
+|5     |LUT2     |    84|
+|6     |LUT3     |    39|
+|7     |LUT4     |   134|
+|8     |LUT5     |   144|
+|9     |LUT6     |   256|
+|10    |MUXF7    |     7|
+|11    |RAM32M   |    18|
+|12    |RAM64X1S |    32|
+|13    |FDCE     |   702|
+|14    |FDRE     |   132|
+|15    |LD       |    32|
+|16    |IBUF     |    12|
+|17    |OBUF     |    13|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-----------------+------+
+|      |Instance                     |Module           |Cells |
++------+-----------------------------+-----------------+------+
+|1     |top                          |                 |  1671|
+|2     |  bd                         |button_debouncer |    20|
+|3     |  clk_gen                    |clk_gen          |    56|
+|4     |  led_mux                    |led_mux          |    29|
+|5     |  mips_top                   |mips_top         |  1500|
+|6     |    dmem                     |dmem             |    32|
+|7     |    mips                     |mips             |  1468|
+|8     |      dp                     |datapath         |  1468|
+|9     |        alu                  |alu              |    98|
+|10    |        decode_execute_reg   |d_e_stage_reg    |   358|
+|11    |        execute_memory_reg   |e_m_stage_reg    |   278|
+|12    |        fetch_decode_reg     |f_d_stage_reg    |   170|
+|13    |        hilo                 |hilo_reg         |    64|
+|14    |        memory_writeback_reg |m_wb_stage_reg   |   320|
+|15    |        mult                 |multiply         |    63|
+|16    |        pc_plus_4            |adder            |     8|
+|17    |        pc_plus_br           |adder_0          |     8|
+|18    |        pc_reg               |dreg             |    79|
+|19    |        rf                   |regfile          |    22|
++------+-----------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 949.312 ; gain = 426.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 949.312 ; gain = 299.758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 949.312 ; gain = 426.469
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 149 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 949.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 82 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+165 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 949.312 ; gain = 658.398
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 949.312 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.runs/synth_1/mips_fpga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mips_fpga_utilization_synth.rpt -pb mips_fpga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 13:01:59 2024...

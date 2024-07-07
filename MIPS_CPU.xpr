@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2019.1 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="40" Path="C:/Users/Waylon/Desktop/Code/MIPS_CPU/MIPS_CPU.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="d6bf742a0fe04d81880f69e4e3d64a9b"/>
+    <Option Name="Part" Val="xc7a35tcpg236-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="BoardPart" Val="digilentinc.com:basys3:part0:1.2"/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSAVendor" Val="xilinx"/>
+    <Option Name="DSABoardId" Val="basys3"/>
+    <Option Name="DSANumComputeUnits" Val="60"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="1024"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+    <Option Name="SimTypes" Val="rtl"/>
+    <Option Name="SimTypes" Val="bfm"/>
+    <Option Name="SimTypes" Val="tlm"/>
+    <Option Name="SimTypes" Val="tlm_dpi"/>
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/adder.v"/>
+          <Attr Name="ImportTime" Val="1678214954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/alu.v"/>
+          <Attr Name="ImportTime" Val="1680389252"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/auxdec.v"/>
+          <Attr Name="ImportTime" Val="1680392272"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass6/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/button_debouncer.v"/>
+          <Attr Name="ImportTime" Val="1678817826"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass6/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/clk_gen.v"/>
+          <Attr Name="ImportTime" Val="1678817826"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/controlunit.v"/>
+          <Attr Name="ImportTime" Val="1683431316"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/d_e_stage_reg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/new/d_e_stage_reg.v"/>
+          <Attr Name="ImportTime" Val="1683435120"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/datapath.v"/>
+          <Attr Name="ImportTime" Val="1683438544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/memory/dmem.v"/>
+          <Attr Name="ImportTime" Val="1678214954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/dreg.v"/>
+          <Attr Name="ImportTime" Val="1678214954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/e_m_stage_reg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/new/e_m_stage_reg.v"/>
+          <Attr Name="ImportTime" Val="1683432638"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/f_d_stage_reg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/new/f_d_stage_reg.v"/>
+          <Attr Name="ImportTime" Val="1682984362"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass6/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/hex_to_7seg.v"/>
+          <Attr Name="ImportTime" Val="1678817826"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/hilo_reg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/new/hilo_reg.v"/>
+          <Attr Name="ImportTime" Val="1680391422"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/memory/imem.v"/>
+          <Attr Name="ImportTime" Val="1678214954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass6/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/led_mux.v"/>
+          <Attr Name="ImportTime" Val="1678817826"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/m_wb_stage_reg.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/new/m_wb_stage_reg.v"/>
+          <Attr Name="ImportTime" Val="1683432670"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/control_unit/maindec.v"/>
+          <Attr Name="ImportTime" Val="1683431502"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips.v"/>
+          <Attr Name="ImportTime" Val="1683430058"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/mips/mips_top.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/mips/mips_top.v"/>
+          <Attr Name="ImportTime" Val="1682989104"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/multiply.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/new/multiply.v"/>
+          <Attr Name="ImportTime" Val="1680639860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/mux2.v"/>
+          <Attr Name="ImportTime" Val="1678214954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/mux3.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/new/mux3.v"/>
+          <Attr Name="ImportTime" Val="1680386446"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/regfile.v"/>
+          <Attr Name="ImportTime" Val="1678214954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass5/lab5_processor_design_1/single_cycle_mips_source_initial/datapath/signext.v"/>
+          <Attr Name="ImportTime" Val="1678214954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/basys3_single_cycle_mips_validation/mips_fpga.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/Desktop/cmpe140ass6/basys3_single_cycle_mips_validation/basys3_single_cycle_mips_validation/mips_fpga.v"/>
+          <Attr Name="ImportTime" Val="1678817826"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/cmpe140ass7/memfile.dat">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sources_1/imports/cmpe140ass7/memfile.dat"/>
+          <Attr Name="ImportTime" Val="1683441778"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="mips_fpga"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc"/>
+          <Attr Name="ImportTime" Val="1678817826"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <File Path="$PSRCDIR/sim_1/imports/new/tb_mips_top.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../MIPS CPU1/assignment6v1.srcs/sim_1/new/tb_mips_top.v"/>
+          <Attr Name="ImportTime" Val="1683441828"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="tb_mips_top"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+      <Filter Type="Utils"/>
+      <Config>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+  <Board>
+    <Jumpers/>
+  </Board>
+  <DashboardSummary Version="1" Minor="0">
+    <Dashboards>
+      <Dashboard Name="default_dashboard">
+        <Gadgets>
+          <Gadget Name="drc_1" Type="drc" Version="1" Row="2" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_drc_0 "/>
+          </Gadget>
+          <Gadget Name="methodology_1" Type="methodology" Version="1" Row="2" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_methodology_0 "/>
+          </Gadget>
+          <Gadget Name="power_1" Type="power" Version="1" Row="1" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_power_0 "/>
+          </Gadget>
+          <Gadget Name="timing_1" Type="timing" Version="1" Row="0" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_timing_summary_0 "/>
+          </Gadget>
+          <Gadget Name="utilization_1" Type="utilization" Version="1" Row="0" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="synth_1#synth_1_synth_report_utilization_0 "/>
+            <GadgetParam Name="RUN.STEP" Type="string" Value="synth_design"/>
+            <GadgetParam Name="RUN.TYPE" Type="string" Value="synthesis"/>
+          </Gadget>
+          <Gadget Name="utilization_2" Type="utilization" Version="1" Row="1" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_place_report_utilization_0 "/>
+          </Gadget>
+        </Gadgets>
+      </Dashboard>
+      <CurrentDashboard>default_dashboard</CurrentDashboard>
+    </Dashboards>
+  </DashboardSummary>
+  <BootPmcSettings Version="1" Minor="0">
+    <Parameters>
+      <Parameter Name="PMC_CDO.ATTRS.LOADADDR" Value="" Type="string"/>
+      <Parameter Name="BOOT.PMC.QSPI_ENABLE" Value="0" Type="string"/>
+      <Parameter Name="BOOT.PMC.QSPI_FB_CLK" Value="0" Type="string"/>
+      <Parameter Name="BOOT.PMC.QSPI_FREQ" Value="300" Type="string"/>
+      <Parameter Name="BOOT.PMC.QSPI_BUS_WIDTH" Value="x1" Type="string"/>
+      <Parameter Name="BOOT.PMC.QSPI_DATA_MODE" Value="Single" Type="string"/>
+      <Parameter Name="BOOT.PMC.SD0_ENABLE" Value="0" Type="string"/>
+      <Parameter Name="BOOT.PMC.SD0_FREQ" Value="200" Type="string"/>
+      <Parameter Name="BOOT.PMC.SD0_SLOT_TYPE" Value="SD 2.0" Type="string"/>
+      <Parameter Name="BOOT.PMC.SD0_DATA_TRANSFER_MODE" Value="4Bit" Type="string"/>
+      <Parameter Name="BOOT.PMC.SD1_ENABLE" Value="0" Type="string"/>
+      <Parameter Name="BOOT.PMC.SD1_FREQ" Value="200" Type="string"/>
+      <Parameter Name="BOOT.PMC.SD1_SLOT_TYPE" Value="SD 2.0" Type="string"/>
+      <Parameter Name="BOOT.PMC.SD1_DATA_TRANSFER_MODE" Value="4Bit" Type="string"/>
+      <Parameter Name="BOOT.PMC.OSPI_ENABLE" Value="0" Type="string"/>
+      <Parameter Name="BOOT.PMC.OSPI_FREQ" Value="300" Type="string"/>
+      <Parameter Name="BOOT.USB_ENABLE" Value="0" Type="string"/>
+      <Parameter Name="BOOT.PMC.SMAP_ENABLE" Value="0" Type="string"/>
+      <Parameter Name="BOOT.PMC.SMAP_DATA_WIDTH" Value="32 Bit" Type="string"/>
+      <Parameter Name="BOOT.PMC.OSC_FREQ" Value="33.333" Type="string"/>
+      <Parameter Name="BOOT.SECONDARY.PCIE_ENABLE" Value="0" Type="string"/>
+    </Parameters>
+  </BootPmcSettings>
+</Project>
